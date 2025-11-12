@@ -1,0 +1,48 @@
+:root{
+  --accent:#2b6cb0;
+  --muted:#666;
+  --bg:#f7fafc;
+  --card:#ffffff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height:1.5;
+  background:var(--bg);
+  color:#111;
+}
+
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:var(--card);
+  border-bottom:1px solid #e6e6e6;
+}
+
+.site-header h1{margin:0;font-size:1.25rem}
+.site-header nav a{
+  margin-left:1rem;
+  text-decoration:none;
+  color:var(--muted);
+}
+.site-header nav a:hover{color:var(--accent)}
+
+main{padding:2rem;max-width:1000px;margin:0 auto}
+.hero{background:linear-gradient(90deg,#fff 0%, #f9fafb 100%);padding:1.5rem;border-radius:8px;margin-bottom:1.25rem}
+.categories ul{padding-left:1.1rem}
+
+.event{background:var(--card);padding:1rem;border-radius:8px;margin-bottom:1rem;border:1px solid #eee}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.gallery-grid img{width:100%;height:auto;border-radius:6px;display:block}
+.contact-form{display:grid;gap:.75rem;max-width:600px}
+.contact-form label{display:block}
+.contact-form input,.contact-form textarea{
+  width:100%;padding:.5rem;border:1px solid #ddd;border-radius:6px;background:#fff
+}
+button{background:var(--accent);color:#fff;border:none;padding:.6rem .9rem;border-radius:6px;cursor:pointer}
+
+footer{padding:1rem 2rem;text-align:center;color:var(--muted)}
