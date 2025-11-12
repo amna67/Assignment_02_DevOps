@@ -1,11 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Campus Events</title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="utf-8" />
+  <title>Campus Events — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <h1>Welcome to Campus Events!</h1>
-  <p>This is the homepage.</p>
+  <header class="site-header">
+    <h1><a href="index.html">Campus Events</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome — Upcoming campus events</h2>
+      <p>Discover seminars, workshops and activities.</p>
+    </section>
+
+    <section class="categories">
+      <h3>Event Categories</h3>
+      <ul>
+        <li><strong>Seminars:</strong> Research talks, guest lectures</li>
+        <li><strong>Workshops:</strong> Hands-on coding, labs</li>
+        <li><strong>Clubs & Activities:</strong> Cultural and sports events</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Campus Events</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
