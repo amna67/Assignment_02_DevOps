@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.gitignore
+Dockerfile
+.env
+.vscode
+.idea
+npm-debug.log
+.parcel-cache
+.cache
