@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact — Campus Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1><a href="index.html">Campus Events</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+
+    <form 
+      action="#" 
+      method="post" 
+      class="contact-form" 
+      onsubmit="alert('This is a static demo — backend processing not implemented.'); return false;"
+    >
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <section class="socials">
+      <h3>Follow</h3>
+      <p>
+        <a href="#" aria-label="Facebook">Facebook</a> |
+        <a href="#" aria-label="Twitter">Twitter</a> |
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Campus Events</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
