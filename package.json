@@ -4,8 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:index": "parcel build src/index.html",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir ./dist --public-url ./ && parcel build src/about.html --dist-dir ./dist --public-url ./ && parcel build src/events.html --dist-dir ./dist --public-url ./ && parcel build src/gallery.html --dist-dir ./dist --public-url ./ && parcel build src/contact.html --dist-dir ./dist --public-url ./",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  },
   "bugs": {
     "url": "https://github.com/amna67/Assignment_02_DevOps/issues"
   },
