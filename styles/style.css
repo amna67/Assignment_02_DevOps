@@ -46,3 +46,90 @@ main{padding:2rem;max-width:1000px;margin:0 auto}
 button{background:var(--accent);color:#fff;border:none;padding:.6rem .9rem;border-radius:6px;cursor:pointer}
 
 footer{padding:1rem 2rem;text-align:center;color:var(--muted)}
+/* Extra styling for Contact */
+/* ========================= */
+
+main h2{
+  margin-top:0;
+  margin-bottom:1rem;
+  font-size:1.75rem;
+}
+
+.contact-form{
+  background:var(--card);
+  padding:1.25rem 1.5rem;
+  border-radius:8px;
+  border:1px solid #eee;
+}
+
+.contact-form label{
+  font-weight:500;
+  color:#222;
+  margin-bottom:0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+  font-size:0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 2px rgba(43,108,176,0.15);
+}
+
+.contact-form button{
+  margin-top:0.5rem;
+  justify-self:start;
+}
+
+/* Social links under contact form */
+.socials{
+  margin-top:2rem;
+  color:var(--muted);
+}
+
+.socials h3{
+  margin-bottom:0.25rem;
+}
+
+.socials a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.socials a:hover{
+  text-decoration:underline;
+}
+
+/* Button hover effect (all pages, safe) */
+button:hover{
+  opacity:.9;
+}
+
+/* Small screen tweaks */
+@media (max-width:600px){
+  main{
+    padding:1.5rem;
+  }
+
+  .site-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .site-header nav{
+    margin-top:0.5rem;
+  }
+
+  .site-header nav a{
+    margin-left:0;
+    margin-right:0.75rem;
+  }
+
+  .contact-form{
+    padding:1rem;
+  }
+}
