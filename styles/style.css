@@ -46,3 +46,63 @@ main{padding:2rem;max-width:1000px;margin:0 auto}
 button{background:var(--accent);color:#fff;border:none;padding:.6rem .9rem;border-radius:6px;cursor:pointer}
 
 footer{padding:1rem 2rem;text-align:center;color:var(--muted)}
+
+/* =============================
+   EVENTS PAGE SPECIFIC STYLING
+   ============================= */
+
+/* Container for all events */
+.events-page main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Page heading */
+.events-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+/* Individual event card */
+.events-page .event {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect on event card */
+.events-page .event:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Event title */
+.events-page .event h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+    font-size: 1.25rem;
+}
+
+/* Event details */
+.events-page .event p {
+    margin: 0.25rem 0;
+    color: var(--muted);
+}
+
+/* Strong tags inside event cards */
+.events-page .event p strong {
+    color: #000;
+}
+
+/* Make sure footer stays consistent */
+.events-page footer {
+    padding-top: 2rem;
+}
