@@ -10,7 +10,7 @@ package-lock.json
 .parcel-cache/
 
 # Build output
-dist/
+/dist
 
 # OS
 .DS_Store
