@@ -2,10 +2,6 @@
   "name": "assignment_02_devops",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
-
-=======
->>>>>>> 2cf418e (created home page)
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:index": "parcel build src/index.html",
